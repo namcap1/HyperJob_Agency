@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+{% if is_staff %}
+    <form action="/vacancy/new" method="post"> {% csrf_token %}
+        <table>{{ form.as_table }}</table>
+        <button type="submit">Post</button>
+    </form>
+{% else %}
+    <form action="/resume/new" method="post"> {% csrf_token %}
+        <table>{{ form.as_table }}</table>
+        <button type="submit">Post</button>
+    </form>
+{% endif %}
+</body>
+</html>

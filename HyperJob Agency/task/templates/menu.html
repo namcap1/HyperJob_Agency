@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Welcome to HyperJob!</h2>
+{% if not is_authenticated %}
+<div> <a href="/login">Login page</a></div>
+<div> <a href="/signup">Sign up page</a></div>
+{% endif %}
+<div> <a href="/vacancies">Vacancy List</a></div>
+<div> <a href="/resumes">Resume List</a></div>
+<div> <a href="/home">Personal Profile</a></div>
+</body>
+</html>

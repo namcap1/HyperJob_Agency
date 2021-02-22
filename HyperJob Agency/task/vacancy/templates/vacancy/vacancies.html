@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+<body>
+{% for vacancy in vacancies %}
+    <div>{{ vacancy.author }}: {{ vacancy.description }}</div>
+{% endfor %}
+</body>
+</html>
